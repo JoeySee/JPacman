@@ -1,5 +1,5 @@
 Bug number: 0
 Initial state of the system: Initial state (Having pressed start)
-Steps to reproduce: Collide with the red or blue ghosts
-Expected outcome: The player's death animation is visible when played, as it is with the other ghosts.
+Steps to reproduce: Collide with the red (Blinky) or blue (Inky) ghosts
+Expected outcome: The player's death animation is visible when played, as it is with the other ghosts (Pinky, Clyde).
 Actual outcome: The ghosts obscure the animation, preventing the players from seeing it.

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.DirectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-29T05:55:48" hostname="DESKTOP-TAEMN0N" time="0.239">
+<testsuite name="nl.tudelft.jpacman.board.DirectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-04-05T06:21:00" hostname="JOEY-LAPTOP" time="0.203">
   <properties/>
-  <testcase name="testNorth()" classname="nl.tudelft.jpacman.board.DirectionTest" time="0.239"/>
+  <testcase name="[1] NORTH, 0, -1" classname="nl.tudelft.jpacman.board.DirectionTest" time="0.191"/>
+  <testcase name="[2] EAST, 1, 0" classname="nl.tudelft.jpacman.board.DirectionTest" time="0.002"/>
+  <testcase name="[3] SOUTH, 0, 1" classname="nl.tudelft.jpacman.board.DirectionTest" time="0.001"/>
+  <testcase name="[4] WEST, -1, 0" classname="nl.tudelft.jpacman.board.DirectionTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.level.LevelTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-05T05:46:48" hostname="JOEY-LAPTOP" time="0.091">
+<testsuite name="nl.tudelft.jpacman.level.LevelTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-05T06:20:58" hostname="JOEY-LAPTOP" time="0.098">
   <properties/>
-  <testcase name="startStop()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.03"/>
+  <testcase name="startStop()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.039"/>
   <testcase name="registerSecondPlayer()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.042"/>
   <testcase name="registerThirdPlayer()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.002"/>
   <testcase name="registerPlayerTwice()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.002"/>
   <testcase name="registerPlayer()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.002"/>
-  <testcase name="stop()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.002"/>
+  <testcase name="stop()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.001"/>
   <testcase name="start()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.002"/>
   <testcase name="noStart()" classname="nl.tudelft.jpacman.level.LevelTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

@@ -1,0 +1,6 @@
+Requirement 0:
+File: Blinky.java
+Method: nextAiMove()
+Description:
+The nextAiMove() method specifies what Blinky should do when there is a larger horizonal or vertical gap between it and
+the player, but not what to do when the gaps are the same size.

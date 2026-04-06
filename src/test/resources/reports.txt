@@ -1,5 +1,11 @@
 Bug number: 0
 Initial state of the system: Initial state (Having pressed start)
-Steps to reproduce: Collide with the red (Blinky) or blue (Inky) ghosts
+Steps to reproduce: Collide with the red (Blinky) or cyan (Inky) ghosts
 Expected outcome: The player's death animation is visible when played, as it is with the other ghosts (Pinky, Clyde).
 Actual outcome: The ghosts obscure the animation, preventing the players from seeing it.
+
+Bug number: 1
+Initial state of the system: Initial state (Having pressed start)
+Steps to reproduce: Play the game
+Expected outcome: Cyan follows its theoretical pathfinding logic
+Actual outcome: Cyan does not move

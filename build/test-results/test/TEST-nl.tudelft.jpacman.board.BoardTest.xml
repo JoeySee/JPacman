@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.tudelft.jpacman.board.BoardTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-04-06T21:55:57" hostname="Jayben-Moblie-Computer.local" time="0.327">
+  <properties/>
+  <testcase name="outsideBoundaries" classname="nl.tudelft.jpacman.board.BoardTest" time="0.197"/>
+  <testcase name="withinBoundaries" classname="nl.tudelft.jpacman.board.BoardTest" time="0.043"/>
+  <testcase name="verifyWidth()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.047"/>
+  <testcase name="verifyHeight()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.0"/>
+  <system-out><![CDATA[timestamp = 2026-04-06T14:55:57.550691, BoardTest:outsideBoundaries = 
+                              |-------------------jqwik-------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = PREVIOUS_SEED | use the previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 64         | # of all combined edge cases
+edge-cases#tried = 60         | # of edge cases tried in current run
+seed = 4543117140572985106    | random seed to reproduce generated values
+
+
+timestamp = 2026-04-06T14:55:57.601632, BoardTest:withinBoundaries = 
+                              |-------------------jqwik-------------------
+tries = 400                   | # of calls to property
+checks = 400                  | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = PREVIOUS_SEED | use the previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -4068596037119412339   | random seed to reproduce generated values
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

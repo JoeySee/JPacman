@@ -116,6 +116,8 @@ task staticAnalysis(type: GradleBuild) {
 mainClassName = 'nl.tudelft.jpacman.Launcher'
 
 pitest {
+//    Mutation testing for all tests
+//    testSourceSets = [sourceSets.test, sourceSets.defaultTest]
     junit5PluginVersion = '1.2.3'
     useClasspathFile = true
 }

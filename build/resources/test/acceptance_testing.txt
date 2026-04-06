@@ -1,0 +1,52 @@
+--------------------------------------------------------------------------
+Title: Teleport
+As a player,
+I want to be able to go off the screen on one side
+So that I can teleport to the other side of the screen
+
+Scenario 1:
+Given the game has started;
+When the player goes off the screen on the left or the right;
+Then the player will teleport to the other side of the screen
+--------------------------------------------------------------------------
+Title: Eat
+As a player,
+I want to be able to eat pellets
+So that I can increase my score
+
+Scenario 2:
+Given the game has started;
+When the player hovers over a pellet;
+Then the player will consume the pellet and their score will be increased
+--------------------------------------------------------------------------
+Title: Move
+As a player,
+I want to be able to press the arrow keys
+So that I can move my character and play the game
+
+Scenario 3:
+Given the game has started;
+When the player hits an arrow key;
+Then the player will move in the direction corresponding to the arrow
+key pressed, given there are no obstructions
+--------------------------------------------------------------------------
+Title: Win
+As a player,
+I want to be able to win the game
+So that I can feel some sort of satisfaction in my life
+
+Scenario 4:
+Given the game has started;
+When the player consumes all the pellets on the board;
+Then the player will win the game
+--------------------------------------------------------------------------
+Title: Die
+As a player,
+I want to be able to die to the NPCs
+So that I can be challenged when I'm playing the game
+
+Scenario 5:
+Given the game has started;
+When the player collides with an NPC;
+Then the player will die and the game will end
+--------------------------------------------------------------------------

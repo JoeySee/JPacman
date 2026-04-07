@@ -22,7 +22,7 @@ Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the groun
 Expected outcome: The first call to nextAiMove() on Blinky should return Direction.EAST.
 Actual outcome: The first call to nextAiMove() on Blinky returns Direction.SOUTH
 
-Bug number: 2
+Bug number: 3
 Initial state of the system: Game is playing with Blinky as one of the ghosts
 Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
 
@@ -34,7 +34,7 @@ Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the groun
 Expected outcome: The first call to nextAiMove() on Blinky should return Direction.EAST.
 Actual outcome: The first call to nextAiMove() on Blinky returns Direction.SOUTH
 
-Bug number: 3
+Bug number: 4
 Initial state of the system: Game is playing with Blinky as one of the ghosts
 Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
 
@@ -46,7 +46,7 @@ Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the groun
 Expected outcome: The first call to nextAiMove() on Blinky should return Direction.WEST.
 Actual outcome: The first call to nextAiMove() on Blinky returns Direction.SOUTH
 
-Bug number: 4
+Bug number: 5
 Initial state of the system: Game is playing with Blinky as one of the ghosts
 Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
 
@@ -58,7 +58,7 @@ Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the groun
 Expected outcome: The first call to nextAiMove() on Blinky should return Direction.EAST.
 Actual outcome: The first call to nextAiMove() on Blinky returns Direction.NORTH
 
-Bug number: 5
+Bug number: 6
 Initial state of the system: Game is playing with Blinky as one of the ghosts
 Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
 

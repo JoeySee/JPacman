@@ -117,7 +117,14 @@ mainClassName = 'nl.tudelft.jpacman.Launcher'
 
 pitest {
 //    Mutation testing for all tests
-//    testSourceSets = [sourceSets.test, sourceSets.defaultTest]
+    testSourceSets = [sourceSets.test, sourceSets.defaultTest]
+    // Classes to exclude from mutation testing (syntax: package.className,
+    // or copy-paste the class flagged in a PITest error report)
+    excludedTestClasses = ['nl.tudelft.jpacman.npc.ghost.BlinkyTest',
+                           'nl.tudelft.jpacman.sprite.SpriteTest',
+                           'nl.tudelft.jpacman.integration.StartupSystemTest',
+                           'nl.tudelft.jpacman.npc.ghost.NavigationTest',
+                           'nl.tudelft.jpacman.LauncherSmokeTest']
     junit5PluginVersion = '1.2.3'
     useClasspathFile = true
 }

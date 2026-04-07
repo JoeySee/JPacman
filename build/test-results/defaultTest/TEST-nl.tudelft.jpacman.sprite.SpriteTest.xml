@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.sprite.SpriteTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-06T23:04:13" hostname="Jayben-Moblie-Computer.local" time="0.013">
+<testsuite name="nl.tudelft.jpacman.sprite.SpriteTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-07T03:23:51" hostname="JOEY-LAPTOP" time="0.039">
   <properties/>
-  <testcase name="splitOutOfBounds()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.001"/>
-  <testcase name="spriteHeight()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.001"/>
-  <testcase name="animationWidth()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.001"/>
-  <testcase name="splitWidth()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.001"/>
-  <testcase name="spriteWidth()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.001"/>
-  <testcase name="splitHeight()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.001"/>
-  <testcase name="resourceMissing()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.003"/>
-  <testcase name="animationHeight()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.001"/>
+  <testcase name="splitOutOfBounds()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.004"/>
+  <testcase name="spriteHeight()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.003"/>
+  <testcase name="animationWidth()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.004"/>
+  <testcase name="splitWidth()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.003"/>
+  <testcase name="spriteWidth()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.003"/>
+  <testcase name="splitHeight()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.004"/>
+  <testcase name="resourceMissing()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.008"/>
+  <testcase name="animationHeight()" classname="nl.tudelft.jpacman.sprite.SpriteTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

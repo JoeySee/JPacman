@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.level.CollisionInteractionMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-06T23:04:13" hostname="Jayben-Moblie-Computer.local" time="0.224">
+<testsuite name="nl.tudelft.jpacman.level.CollisionInteractionMapTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-07T03:23:58" hostname="JOEY-LAPTOP" time="0.079">
   <properties/>
-  <testcase name="nonSymmetricCollisions()" classname="nl.tudelft.jpacman.level.CollisionInteractionMapTest" time="0.224"/>
+  <testcase name="symmetricCollisions()" classname="nl.tudelft.jpacman.level.CollisionInteractionMapTest" time="0.033"/>
+  <testcase name="nonSymmetricCollisions()" classname="nl.tudelft.jpacman.level.CollisionInteractionMapTest" time="0.043"/>
+  <testcase name="collisionOccurs()" classname="nl.tudelft.jpacman.level.CollisionInteractionMapTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

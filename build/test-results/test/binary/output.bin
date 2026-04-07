@@ -1,0 +1,164 @@
+Ktimestamp = 2026-04-06T20:23:56.707151700, BoardTest:outsideBoundaries = 
+N                              |--------------------jqwik--------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+7after-failure = PREVIOUS_SEED | use the previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 64         | # of all combined edge cases
+Fedge-cases#tried = 56         | # of edge cases tried in current run
+Kseed = 7250093747713219990    | random seed to reproduce generated values
+
+
+Jtimestamp = 2026-04-06T20:23:56.795565200, BoardTest:withinBoundaries = 
+N                              |--------------------jqwik--------------------
+8tries = 400                   | # of calls to property
+9checks = 400                  | # of not rejected calls
+Ggeneration = EXHAUSTIVE       | parameters are exhaustively generated
+7after-failure = PREVIOUS_SEED | use the previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 0          | # of all combined edge cases
+Fedge-cases#tried = 0          | # of edge cases tried in current run
+Kseed = 8632111458629937487    | random seed to reproduce generated values
+
+
+@############ Logging method invocation #1 on mock/spy ########
+@############ Logging method invocation #1 on mock/spy ########
+player.toString();
+H   invoked: -> at java.base/java.lang.String.valueOf(String.java:4220)
+M   has returned: "Mock for Player, hashCode: 1387040607" (java.lang.String)
+
+@############ Logging method invocation #2 on mock/spy ########
+player.toString();
+H   invoked: -> at java.base/java.lang.String.valueOf(String.java:4220)
+M   has returned: "Mock for Player, hashCode: 1387040607" (java.lang.String)
+
+level.registerPlayer(
+*    Mock for Player, hashCode: 1387040607
+);
+]   invoked: -> at nl.tudelft.jpacman.game.SinglePlayerGame.<init>(SinglePlayerGame.java:46)
+   has returned: "null"
+
+@############ Logging method invocation #2 on mock/spy ########
+level.isAnyPlayerAlive();
+^   invoked: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenInProgress(GameTest.java:54)
+.   has returned: "false" (java.lang.Boolean)
+
+@############ Logging method invocation #3 on mock/spy ########
+level.remainingPellets();
+^   invoked: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenInProgress(GameTest.java:55)
+*   has returned: "0" (java.lang.Integer)
+
+@############ Logging method invocation #4 on mock/spy ########
+^   stubbed: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenInProgress(GameTest.java:54)
+level.isAnyPlayerAlive();
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:53)
+-   has returned: "true" (java.lang.Boolean)
+
+@############ Logging method invocation #5 on mock/spy ########
+^   stubbed: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenInProgress(GameTest.java:55)
+level.remainingPellets();
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:53)
+*   has returned: "1" (java.lang.Integer)
+
+@############ Logging method invocation #6 on mock/spy ########
+level.addObserver(
+5    nl.tudelft.jpacman.game.SinglePlayerGame@18fb7e4
+);
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:55)
+   has returned: "null"
+
+@############ Logging method invocation #7 on mock/spy ########
+level.start();
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:56)
+   has returned: "null"
+
+@############ Logging method invocation #1 on mock/spy ########
+@############ Logging method invocation #1 on mock/spy ########
+player.toString();
+H   invoked: -> at java.base/java.lang.String.valueOf(String.java:4220)
+L   has returned: "Mock for Player, hashCode: 143221575" (java.lang.String)
+
+@############ Logging method invocation #2 on mock/spy ########
+player.toString();
+H   invoked: -> at java.base/java.lang.String.valueOf(String.java:4220)
+L   has returned: "Mock for Player, hashCode: 143221575" (java.lang.String)
+
+level.registerPlayer(
+)    Mock for Player, hashCode: 143221575
+);
+]   invoked: -> at nl.tudelft.jpacman.game.SinglePlayerGame.<init>(SinglePlayerGame.java:46)
+   has returned: "null"
+
+@############ Logging method invocation #2 on mock/spy ########
+level.isAnyPlayerAlive();
+a   invoked: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenNotInProgress(GameTest.java:46)
+.   has returned: "false" (java.lang.Boolean)
+
+@############ Logging method invocation #3 on mock/spy ########
+level.remainingPellets();
+a   invoked: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenNotInProgress(GameTest.java:47)
+*   has returned: "0" (java.lang.Integer)
+
+@############ Logging method invocation #4 on mock/spy ########
+a   stubbed: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenNotInProgress(GameTest.java:46)
+level.isAnyPlayerAlive();
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:53)
+-   has returned: "true" (java.lang.Boolean)
+
+@############ Logging method invocation #5 on mock/spy ########
+a   stubbed: -> at nl.tudelft.jpacman.game.GameTest.testStartWhenNotInProgress(GameTest.java:47)
+level.remainingPellets();
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:53)
+*   has returned: "1" (java.lang.Integer)
+
+@############ Logging method invocation #6 on mock/spy ########
+level.addObserver(
+6    nl.tudelft.jpacman.game.SinglePlayerGame@15467b60
+);
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:55)
+   has returned: "null"
+
+@############ Logging method invocation #7 on mock/spy ########
+level.start();
+D   invoked: -> at nl.tudelft.jpacman.game.Game.start(Game.java:56)
+   has returned: "null"
+
+$#@############ Logging method invocation #1 on mock/spy ########
+$#-levelFactory.createLevel(null, null, null);
+$#Z   invoked: -> at nl.tudelft.jpacman.level.MapParserTest.parseMap(MapParserTest.java:24)
+$#   has returned: "null"
+$#
+$#@############ Logging method invocation #1 on mock/spy ########
+$#boardFactory.createWall();
+$#T   invoked: -> at nl.tudelft.jpacman.level.MapParser.addSquare(MapParser.java:116)
+$#   has returned: "null"
+$#
+$#@############ Logging method invocation #2 on mock/spy ########
+$#%boardFactory.createBoard([[null]]);
+$#R   invoked: -> at nl.tudelft.jpacman.level.MapParser.parseMap(MapParser.java:75)
+$#   has returned: "null"
+$#
+$#@############ Logging method invocation #2 on mock/spy ########
+$#Z   stubbed: -> at nl.tudelft.jpacman.level.MapParserTest.parseMap(MapParserTest.java:24)
+$#)levelFactory.createLevel(null, [], []);
+$#R   invoked: -> at nl.tudelft.jpacman.level.MapParser.parseMap(MapParser.java:76)
+$#   has returned: "null"
+$#
+$#@############ Logging method invocation #3 on mock/spy ########
+$#-levelFactory.createLevel(null, null, null);
+$#Z   invoked: -> at nl.tudelft.jpacman.level.MapParserTest.parseMap(MapParserTest.java:27)
+$#   has returned: "null"
+$#
+$#@############ Logging method invocation #3 on mock/spy ########
+$#!boardFactory.createBoard(null);
+$#Z   invoked: -> at nl.tudelft.jpacman.level.MapParserTest.parseMap(MapParserTest.java:28)
+$#   has returned: "null"
+$#
+$#@############ Logging method invocation #4 on mock/spy ########
+$#boardFactory.createWall();
+$#Z   invoked: -> at nl.tudelft.jpacman.level.MapParserTest.parseMap(MapParserTest.java:29)
+$#   has returned: "null"
+$#

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.integration.StartupSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-06T23:04:12" hostname="Jayben-Moblie-Computer.local" time="0.047">
+<testsuite name="nl.tudelft.jpacman.integration.StartupSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-07T03:23:51" hostname="JOEY-LAPTOP" time="0.063">
   <properties/>
-  <testcase name="gameIsRunning()" classname="nl.tudelft.jpacman.integration.StartupSystemTest" time="0.047"/>
+  <testcase name="gameIsRunning()" classname="nl.tudelft.jpacman.integration.StartupSystemTest" time="0.063"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

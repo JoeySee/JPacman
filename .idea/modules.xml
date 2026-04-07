@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpacman.iml" filepath="$PROJECT_DIR$/.idea/modules/jpacman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpacman.defaultTest.iml" filepath="$PROJECT_DIR$/.idea/modules/jpacman.defaultTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpacman.test.iml" filepath="$PROJECT_DIR$/.idea/modules/jpacman.test.iml" />
     </modules>
   </component>
 </project>

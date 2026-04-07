@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">30</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">4</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.224s</div>
+<div class="counter">1.477s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">86%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,37 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html">BlinkyTest</a>.
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html#testLargerHorizonalGap(ArrayList, Direction)[1]">[1] [#####, #b  #, #  P#, #####], EAST</a>
+</li>
+<li>
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html">BlinkyTest</a>.
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html#testLargerHorizonalGap(ArrayList, Direction)[2]">[2] [#####, #  P#, #b  #, #####], EAST</a>
+</li>
+<li>
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html">BlinkyTest</a>.
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html#testLargerHorizonalGap(ArrayList, Direction)[3]">[3] [#####, #  b#, #P  #, #####], WEST</a>
+</li>
+<li>
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html">BlinkyTest</a>.
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html#testLargerHorizonalGap(ArrayList, Direction)[4]">[4] [#####, #P  #, #  b#, #####], WEST</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -80,18 +104,48 @@
 <tbody>
 <tr>
 <td class="success">
+<a href="packages/nl.tudelft.jpacman.board.html">nl.tudelft.jpacman.board</a>
+</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0.923s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/nl.tudelft.jpacman.game.html">nl.tudelft.jpacman.game</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.084s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
 <a href="packages/nl.tudelft.jpacman.level.html">nl.tudelft.jpacman.level</a>
 </td>
-<td>1</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
-<td>0.224s</td>
+<td>0.178s</td>
 <td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="packages/nl.tudelft.jpacman.npc.ghost.html">nl.tudelft.jpacman.npc.ghost</a>
+</td>
+<td>12</td>
+<td>4</td>
+<td>0</td>
+<td>0.292s</td>
+<td class="failures">66%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -107,13 +161,83 @@
 <tbody>
 <tr>
 <td class="success">
+<a href="classes/nl.tudelft.jpacman.board.BoardTest.html">nl.tudelft.jpacman.board.BoardTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.914s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/nl.tudelft.jpacman.board.DirectionTest.html">nl.tudelft.jpacman.board.DirectionTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.005s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/nl.tudelft.jpacman.board.OccupantTest.html">nl.tudelft.jpacman.board.OccupantTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.004s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/nl.tudelft.jpacman.game.GameTest.html">nl.tudelft.jpacman.game.GameTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.084s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
 <a href="classes/nl.tudelft.jpacman.level.CollisionInteractionMapTest.html">nl.tudelft.jpacman.level.CollisionInteractionMapTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.077s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/nl.tudelft.jpacman.level.MapParserTest.html">nl.tudelft.jpacman.level.MapParserTest</a>
 </td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.224s</td>
+<td>0.101s</td>
 <td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/nl.tudelft.jpacman.level.PlayerTest.html">nl.tudelft.jpacman.level.PlayerTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/nl.tudelft.jpacman.npc.ghost.BlinkyTest.html">nl.tudelft.jpacman.npc.ghost.BlinkyTest</a>
+</td>
+<td>12</td>
+<td>4</td>
+<td>0</td>
+<td>0.292s</td>
+<td class="failures">66%</td>
 </tr>
 </tbody>
 </table>
@@ -126,7 +250,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at Apr. 6, 2026, 4:04:13 p.m.</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at Apr. 6, 2026, 8:23:58 p.m.</p>
 </div>
 </div>
 </body>

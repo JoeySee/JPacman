@@ -9,3 +9,63 @@ Initial state of the system: Initial state (Having pressed start)
 Steps to reproduce: Play the game
 Expected outcome: Cyan follows its theoretical pathfinding logic
 Actual outcome: Cyan does not move
+
+Bug number: 2
+Initial state of the system: Game is playing with Blinky as one of the ghosts
+Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
+
+#####
+#b  #
+#  P#
+#####
+
+Expected outcome: The first call to nextAiMove() on Blinky should return Direction.EAST.
+Actual outcome: The first call to nextAiMove() on Blinky returns Direction.SOUTH
+
+Bug number: 2
+Initial state of the system: Game is playing with Blinky as one of the ghosts
+Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
+
+#####
+#b  #
+#  P#
+#####
+
+Expected outcome: The first call to nextAiMove() on Blinky should return Direction.EAST.
+Actual outcome: The first call to nextAiMove() on Blinky returns Direction.SOUTH
+
+Bug number: 3
+Initial state of the system: Game is playing with Blinky as one of the ghosts
+Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
+
+#####
+#  b#
+#P  #
+#####
+
+Expected outcome: The first call to nextAiMove() on Blinky should return Direction.WEST.
+Actual outcome: The first call to nextAiMove() on Blinky returns Direction.SOUTH
+
+Bug number: 4
+Initial state of the system: Game is playing with Blinky as one of the ghosts
+Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
+
+#####
+#  P#
+#b  #
+#####
+
+Expected outcome: The first call to nextAiMove() on Blinky should return Direction.EAST.
+Actual outcome: The first call to nextAiMove() on Blinky returns Direction.NORTH
+
+Bug number: 5
+Initial state of the system: Game is playing with Blinky as one of the ghosts
+Steps to reproduce: Use the following map, where '#' is a wall, ' ' is the ground, `b` is Blinky, and 'P' is the player
+
+#####
+#P  #
+#  b#
+#####
+
+Expected outcome: The first call to nextAiMove() on Blinky should return Direction.WEST.
+Actual outcome: The first call to nextAiMove() on Blinky returns Direction.NORTH

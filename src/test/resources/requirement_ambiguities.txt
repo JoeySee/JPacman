@@ -4,3 +4,6 @@ Method: nextAiMove()
 Description:
 The nextAiMove() method specifies what Blinky should do when there is a larger horizonal or vertical gap between it and
 the player, but not what to do when the gaps are the same size.
+Assumption:
+For testing, we assume that nextAiMove() will cause Blinky to move in the vertical direction if the vertical and
+horizontal gaps are the same size.

@@ -51,7 +51,6 @@ class BlinkyTest {
         l.registerPlayer(player);
 
         Blinky blinky = Navigation.findUnitInBoard(Blinky.class, b);
-        assertNotNull(blinky);
 
         Optional<Direction> expected = Optional.of(direction);
         Optional<Direction> actual = blinky.nextAiMove();
@@ -66,40 +65,61 @@ class BlinkyTest {
         l.registerPlayer(player);
 
         Blinky blinky = Navigation.findUnitInBoard(Blinky.class, b);
-        assertNotNull(blinky);
 
         Optional<Direction> expected = Optional.of(direction);
         Optional<Direction> actual = blinky.nextAiMove();
         assertEquals(expected, actual);
     }
 
-    @Test
-    void testSameSizeGap() {
+    @ParameterizedTest
+    @MethodSource("provideSameSizeGap")
+    void testSameSizeGap(ArrayList<String> map, Direction direction) {
+        Level l = parser.parseMap(map);
+        Board b = l.getBoard();
+        l.registerPlayer(player);
 
+        Blinky blinky = Navigation.findUnitInBoard(Blinky.class, b);
+
+        Optional<Direction> expected = Optional.of(direction);
+        Optional<Direction> actual = blinky.nextAiMove();
+        assertEquals(expected, actual);
     }
 
     private static Stream<Arguments> provideLargerHorizonalGap() {
         return Stream.of(
-                Arguments.of(Lists.newArrayList("b    ", "    P"),
-                        Direction.WEST),
-                Arguments.of(Lists.newArrayList("    b", "P    "),
+                Arguments.of(Lists.newArrayList("#####", "#b  #", "#  P#", "#####"),
                         Direction.EAST),
-                Arguments.of(Lists.newArrayList("    P", "b    "),
+                Arguments.of(Lists.newArrayList("#####", "#  P#", "#b  #", "#####"),
+                        Direction.EAST),
+                Arguments.of(Lists.newArrayList("#####", "#  b#", "#P  #", "#####"),
                         Direction.WEST),
-                Arguments.of(Lists.newArrayList("P    ", "    b"),
-                        Direction.EAST)
+                Arguments.of(Lists.newArrayList("#####", "#P  #", "#  b#", "#####"),
+                        Direction.WEST)
         );
     }
 
     private static Stream<Arguments> provideLargerVerticalGap() {
         return Stream.of(
-                Arguments.of(Lists.newArrayList("b ", "  ", " P"),
+                Arguments.of(Lists.newArrayList("####", "# P#", "#  #", "#b #", "####"),
                         Direction.NORTH),
-                Arguments.of(Lists.newArrayList("P ", "  ", " b"),
+                Arguments.of(Lists.newArrayList("####", "#P #", "#  #", "# b#", "####"),
+                        Direction.NORTH),
+                Arguments.of(Lists.newArrayList("####", "#b #", "#  #", "# P#", "####"),
                         Direction.SOUTH),
-                Arguments.of(Lists.newArrayList(" b", "  ", "P "),
+                Arguments.of(Lists.newArrayList("####", "# b#", "#  #", "#P #", "####"),
+                        Direction.SOUTH)
+        );
+    }
+
+    private static Stream<Arguments> provideSameSizeGap() {
+        return Stream.of(
+                Arguments.of(Lists.newArrayList("####", "# P#", "#b #", "####"),
                         Direction.NORTH),
-                Arguments.of(Lists.newArrayList(" P", "  ", "b "),
+                Arguments.of(Lists.newArrayList("####", "#P #", "# b#", "####"),
+                        Direction.NORTH),
+                Arguments.of(Lists.newArrayList("####", "#b #", "# P#", "####"),
+                        Direction.SOUTH),
+                Arguments.of(Lists.newArrayList("####", "# b#", "#P #", "####"),
                         Direction.SOUTH)
         );
     }

@@ -87,18 +87,18 @@ public abstract class Ghost extends Unit {
      * the ghost is shut in by inaccessible squares.
      */
     protected Direction randomMove() {
-<span class="fc" id="L90">        Square square = getSquare();</span>
-<span class="fc" id="L91">        List&lt;Direction&gt; directions = new ArrayList&lt;&gt;();</span>
-<span class="fc bfc" id="L92" title="All 2 branches covered.">        for (Direction direction : Direction.values()) {</span>
-<span class="fc bfc" id="L93" title="All 2 branches covered.">            if (square.getSquareAt(direction).isAccessibleTo(this)) {</span>
-<span class="fc" id="L94">                directions.add(direction);</span>
+<span class="nc" id="L90">        Square square = getSquare();</span>
+<span class="nc" id="L91">        List&lt;Direction&gt; directions = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L92" title="All 2 branches missed.">        for (Direction direction : Direction.values()) {</span>
+<span class="nc bnc" id="L93" title="All 2 branches missed.">            if (square.getSquareAt(direction).isAccessibleTo(this)) {</span>
+<span class="nc" id="L94">                directions.add(direction);</span>
             }
         }
-<span class="pc bpc" id="L97" title="1 of 2 branches missed.">        if (directions.isEmpty()) {</span>
+<span class="nc bnc" id="L97" title="All 2 branches missed.">        if (directions.isEmpty()) {</span>
 <span class="nc" id="L98">            return null;</span>
         }
-<span class="fc" id="L100">        int i = new Random().nextInt(directions.size());</span>
-<span class="fc" id="L101">        return directions.get(i);</span>
+<span class="nc" id="L100">        int i = new Random().nextInt(directions.size());</span>
+<span class="nc" id="L101">        return directions.get(i);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

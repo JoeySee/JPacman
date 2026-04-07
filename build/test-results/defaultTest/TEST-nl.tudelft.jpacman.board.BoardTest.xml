@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.BoardTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-04-06T21:53:29" hostname="Jayben-Moblie-Computer.local" time="0.039">
+<testsuite name="nl.tudelft.jpacman.board.BoardTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-04-06T23:04:12" hostname="Jayben-Moblie-Computer.local" time="0.028">
   <properties/>
-  <testcase name="verifyWidth()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.001"/>
-  <testcase name="verifyHeight()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.001"/>
-  <testcase name="[1] 0, 0" classname="nl.tudelft.jpacman.board.BoardTest" time="0.007"/>
-  <testcase name="[2] 1, 2" classname="nl.tudelft.jpacman.board.BoardTest" time="0.001"/>
-  <testcase name="[3] 0, 1" classname="nl.tudelft.jpacman.board.BoardTest" time="0.001"/>
+  <testcase name="verifyWidth()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.0"/>
+  <testcase name="verifyHeight()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.0"/>
+  <testcase name="[1] 0, 0" classname="nl.tudelft.jpacman.board.BoardTest" time="0.004"/>
+  <testcase name="[2] 1, 2" classname="nl.tudelft.jpacman.board.BoardTest" time="0.0"/>
+  <testcase name="[3] 0, 1" classname="nl.tudelft.jpacman.board.BoardTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

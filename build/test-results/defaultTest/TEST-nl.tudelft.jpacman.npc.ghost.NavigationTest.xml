@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.npc.ghost.NavigationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-06T21:53:29" hostname="Jayben-Moblie-Computer.local" time="0.029">
+<testsuite name="nl.tudelft.jpacman.npc.ghost.NavigationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-06T23:04:13" hostname="Jayben-Moblie-Computer.local" time="0.023">
   <properties/>
-  <testcase name="testSimplePath()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.008"/>
-  <testcase name="testNoTraveller()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.002"/>
-  <testcase name="testNoShortestPath()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.002"/>
-  <testcase name="testFullSizedLevel()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.008"/>
+  <testcase name="testSimplePath()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.006"/>
+  <testcase name="testNoTraveller()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.001"/>
+  <testcase name="testNoShortestPath()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.001"/>
+  <testcase name="testFullSizedLevel()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.006"/>
   <testcase name="testShortestPathEmpty()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.002"/>
   <testcase name="testNoNearestUnit()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.001"/>
-  <testcase name="testCornerPath()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.002"/>
-  <testcase name="testNearestUnit()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.002"/>
+  <testcase name="testCornerPath()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.001"/>
+  <testcase name="testNearestUnit()" classname="nl.tudelft.jpacman.npc.ghost.NavigationTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

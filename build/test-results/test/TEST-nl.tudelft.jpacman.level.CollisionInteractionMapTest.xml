@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.tudelft.jpacman.level.CollisionInteractionMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-06T23:04:13" hostname="Jayben-Moblie-Computer.local" time="0.224">
+  <properties/>
+  <testcase name="nonSymmetricCollisions()" classname="nl.tudelft.jpacman.level.CollisionInteractionMapTest" time="0.224"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -24,9 +24,9 @@ public class CollisionInteractionMap implements CollisionMap {
     /**
      * Creates a new, empty collision map.
      */
-<span class="nc" id="L27">    public CollisionInteractionMap() {</span>
-<span class="nc" id="L28">        this.handlers = new HashMap&lt;&gt;();</span>
-<span class="nc" id="L29">    }</span>
+<span class="fc" id="L27">    public CollisionInteractionMap() {</span>
+<span class="fc" id="L28">        this.handlers = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L29">    }</span>
 
     /**
      * Adds a two-way collision interaction to this collection, i.e. the
@@ -71,11 +71,11 @@ public class CollisionInteractionMap implements CollisionMap {
     public &lt;C1 extends Unit, C2 extends Unit&gt; void onCollision(
         Class&lt;C1&gt; collider, Class&lt;C2&gt; collidee, boolean symetric,
         CollisionHandler&lt;C1, C2&gt; handler) {
-<span class="nc" id="L74">        addHandler(collider, collidee, handler);</span>
-<span class="nc bnc" id="L75" title="All 2 branches missed.">        if (symetric) {</span>
+<span class="fc" id="L74">        addHandler(collider, collidee, handler);</span>
+<span class="pc bpc" id="L75" title="1 of 2 branches missed.">        if (symetric) {</span>
 <span class="nc" id="L76">            addHandler(collidee, collider, new InverseCollisionHandler&lt;&gt;(handler));</span>
         }
-<span class="nc" id="L78">    }</span>
+<span class="fc" id="L78">    }</span>
 
     /**
      * Adds the collision interaction..
@@ -89,13 +89,13 @@ public class CollisionInteractionMap implements CollisionMap {
      */
     private void addHandler(Class&lt;? extends Unit&gt; collider,
                             Class&lt;? extends Unit&gt; collidee, CollisionHandler&lt;?, ?&gt; handler) {
-<span class="nc bnc" id="L92" title="All 2 branches missed.">        if (!handlers.containsKey(collider)) {</span>
-<span class="nc" id="L93">            handlers.put(collider, new HashMap&lt;&gt;());</span>
+<span class="pc bpc" id="L92" title="1 of 2 branches missed.">        if (!handlers.containsKey(collider)) {</span>
+<span class="fc" id="L93">            handlers.put(collider, new HashMap&lt;&gt;());</span>
         }
 
-<span class="nc" id="L96">        Map&lt;Class&lt;? extends Unit&gt;, CollisionHandler&lt;?, ?&gt;&gt; map = handlers.get(collider);</span>
-<span class="nc" id="L97">        map.put(collidee, handler);</span>
-<span class="nc" id="L98">    }</span>
+<span class="fc" id="L96">        Map&lt;Class&lt;? extends Unit&gt;, CollisionHandler&lt;?, ?&gt;&gt; map = handlers.get(collider);</span>
+<span class="fc" id="L97">        map.put(collidee, handler);</span>
+<span class="fc" id="L98">    }</span>
 
     /**
      * Handles the collision between two colliding parties, if a suitable
@@ -115,24 +115,24 @@ public class CollisionInteractionMap implements CollisionMap {
     @Override
     public &lt;C1 extends Unit, C2 extends Unit&gt; void collide(C1 collider,
                                                            C2 collidee) {
-<span class="nc" id="L118">        Class&lt;? extends Unit&gt; colliderKey = getMostSpecificClass(handlers, collider.getClass());</span>
-<span class="nc bnc" id="L119" title="All 2 branches missed.">        if (colliderKey == null) {</span>
-<span class="nc" id="L120">            return;</span>
+<span class="fc" id="L118">        Class&lt;? extends Unit&gt; colliderKey = getMostSpecificClass(handlers, collider.getClass());</span>
+<span class="fc bfc" id="L119" title="All 2 branches covered.">        if (colliderKey == null) {</span>
+<span class="fc" id="L120">            return;</span>
         }
 
-<span class="nc" id="L123">        Map&lt;Class&lt;? extends Unit&gt;, CollisionHandler&lt;?, ?&gt;&gt; map = handlers.get(colliderKey);</span>
-<span class="nc" id="L124">        Class&lt;? extends Unit&gt; collideeKey = getMostSpecificClass(map, collidee.getClass());</span>
-<span class="nc bnc" id="L125" title="All 2 branches missed.">        if (collideeKey == null) {</span>
+<span class="fc" id="L123">        Map&lt;Class&lt;? extends Unit&gt;, CollisionHandler&lt;?, ?&gt;&gt; map = handlers.get(colliderKey);</span>
+<span class="fc" id="L124">        Class&lt;? extends Unit&gt; collideeKey = getMostSpecificClass(map, collidee.getClass());</span>
+<span class="pc bpc" id="L125" title="1 of 2 branches missed.">        if (collideeKey == null) {</span>
 <span class="nc" id="L126">            return;</span>
         }
 
-<span class="nc" id="L129">        CollisionHandler&lt;C1, C2&gt; collisionHandler = (CollisionHandler&lt;C1, C2&gt;) map.get(collideeKey);</span>
-<span class="nc bnc" id="L130" title="All 2 branches missed.">        if (collisionHandler == null) {</span>
+<span class="fc" id="L129">        CollisionHandler&lt;C1, C2&gt; collisionHandler = (CollisionHandler&lt;C1, C2&gt;) map.get(collideeKey);</span>
+<span class="pc bpc" id="L130" title="1 of 2 branches missed.">        if (collisionHandler == null) {</span>
 <span class="nc" id="L131">            return;</span>
         }
 
-<span class="nc" id="L134">        collisionHandler.handleCollision(collider, collidee);</span>
-<span class="nc" id="L135">    }</span>
+<span class="fc" id="L134">        collisionHandler.handleCollision(collider, collidee);</span>
+<span class="fc" id="L135">    }</span>
 
     /**
      * Figures out the most specific class that is listed in the map. I.e. if A
@@ -146,13 +146,13 @@ public class CollisionInteractionMap implements CollisionMap {
      */
     private Class&lt;? extends Unit&gt; getMostSpecificClass(
         Map&lt;Class&lt;? extends Unit&gt;, ?&gt; map, Class&lt;? extends Unit&gt; key) {
-<span class="nc" id="L149">        List&lt;Class&lt;? extends Unit&gt;&gt; collideeInheritance = getInheritance(key);</span>
-<span class="nc bnc" id="L150" title="All 2 branches missed.">        for (Class&lt;? extends Unit&gt; pointer : collideeInheritance) {</span>
-<span class="nc bnc" id="L151" title="All 2 branches missed.">            if (map.containsKey(pointer)) {</span>
-<span class="nc" id="L152">                return pointer;</span>
+<span class="fc" id="L149">        List&lt;Class&lt;? extends Unit&gt;&gt; collideeInheritance = getInheritance(key);</span>
+<span class="fc bfc" id="L150" title="All 2 branches covered.">        for (Class&lt;? extends Unit&gt; pointer : collideeInheritance) {</span>
+<span class="fc bfc" id="L151" title="All 2 branches covered.">            if (map.containsKey(pointer)) {</span>
+<span class="fc" id="L152">                return pointer;</span>
             }
-<span class="nc" id="L154">        }</span>
-<span class="nc" id="L155">        return null;</span>
+<span class="fc" id="L154">        }</span>
+<span class="fc" id="L155">        return null;</span>
     }
 
     /**
@@ -166,25 +166,25 @@ public class CollisionInteractionMap implements CollisionMap {
     @SuppressWarnings(&quot;unchecked&quot;)
     private List&lt;Class&lt;? extends Unit&gt;&gt; getInheritance(
         Class&lt;? extends Unit&gt; clazz) {
-<span class="nc" id="L169">        List&lt;Class&lt;? extends Unit&gt;&gt; found = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L170">        found.add(clazz);</span>
+<span class="fc" id="L169">        List&lt;Class&lt;? extends Unit&gt;&gt; found = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L170">        found.add(clazz);</span>
 
-<span class="nc" id="L172">        int index = 0;</span>
-<span class="nc bnc" id="L173" title="All 2 branches missed.">        while (found.size() &gt; index) {</span>
-<span class="nc" id="L174">            Class&lt;?&gt; current = found.get(index);</span>
-<span class="nc" id="L175">            Class&lt;?&gt; superClass = current.getSuperclass();</span>
-<span class="nc bnc" id="L176" title="All 4 branches missed.">            if (superClass != null &amp;&amp; Unit.class.isAssignableFrom(superClass)) {</span>
-<span class="nc" id="L177">                found.add((Class&lt;? extends Unit&gt;) superClass);</span>
+<span class="fc" id="L172">        int index = 0;</span>
+<span class="fc bfc" id="L173" title="All 2 branches covered.">        while (found.size() &gt; index) {</span>
+<span class="fc" id="L174">            Class&lt;?&gt; current = found.get(index);</span>
+<span class="fc" id="L175">            Class&lt;?&gt; superClass = current.getSuperclass();</span>
+<span class="pc bpc" id="L176" title="1 of 4 branches missed.">            if (superClass != null &amp;&amp; Unit.class.isAssignableFrom(superClass)) {</span>
+<span class="fc" id="L177">                found.add((Class&lt;? extends Unit&gt;) superClass);</span>
             }
-<span class="nc bnc" id="L179" title="All 2 branches missed.">            for (Class&lt;?&gt; classInterface : current.getInterfaces()) {</span>
-<span class="nc bnc" id="L180" title="All 2 branches missed.">                if (Unit.class.isAssignableFrom(classInterface)) {</span>
+<span class="fc bfc" id="L179" title="All 2 branches covered.">            for (Class&lt;?&gt; classInterface : current.getInterfaces()) {</span>
+<span class="pc bpc" id="L180" title="1 of 2 branches missed.">                if (Unit.class.isAssignableFrom(classInterface)) {</span>
 <span class="nc" id="L181">                    found.add((Class&lt;? extends Unit&gt;) classInterface);</span>
                 }
             }
-<span class="nc" id="L184">            index++;</span>
-<span class="nc" id="L185">        }</span>
+<span class="fc" id="L184">            index++;</span>
+<span class="fc" id="L185">        }</span>
 
-<span class="nc" id="L187">        return found;</span>
+<span class="fc" id="L187">        return found;</span>
     }
 
     /**

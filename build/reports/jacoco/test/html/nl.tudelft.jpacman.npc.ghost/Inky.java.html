@@ -105,10 +105,10 @@ import java.util.Optional;
 <span class="fc" id="L105">        List&lt;Direction&gt; path = Navigation.shortestPath(getSquare(),</span>
             destination, this);
 
-<span class="pc bpc" id="L108" title="1 of 4 branches missed.">        if (path != null &amp;&amp; !path.isEmpty()) {</span>
+<span class="pc bpc" id="L108" title="2 of 4 branches missed.">        if (path != null &amp;&amp; !path.isEmpty()) {</span>
 <span class="fc" id="L109">            return Optional.ofNullable(path.get(0));</span>
         }
-<span class="fc" id="L111">        return Optional.empty();</span>
+<span class="nc" id="L111">        return Optional.empty();</span>
     }
 
 
